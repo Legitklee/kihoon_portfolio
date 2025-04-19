@@ -58,8 +58,6 @@ This hybrid approach allowed us to maintain user control while minimizing comple
 
 ### 📎 Diagram
 
-![Treadmill Overview](/assets/images/treadmill-diagram.png)
-
-> *Note: Be sure to place the image file as `assets/images/treadmill-diagram.png` in your site folder.*
+![Treadmill Overview]({{ site.baseurl }}/assets/images/treadmill-diagram.png)
 
 ---
