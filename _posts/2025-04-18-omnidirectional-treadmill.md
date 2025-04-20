@@ -12,17 +12,44 @@ image: /assets/images/treadmill-diagram.png
 
 ---
 
-<div class="glider-contain" style="width: 100%; overflow: hidden; margin-top: 2rem;">
+<div class="glider-contain" style="position: relative; width: 100%; overflow: hidden; margin: 2rem 0;">
+  <button aria-label="Previous" class="glider-prev" style="
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    transform: translateY(-50%);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  ">❮</button>
+
+  <button aria-label="Next" class="glider-next" style="
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    transform: translateY(-50%);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  ">❯</button>
+
   <div class="glider">
     <img src="/portfolio/assets/images/treadmill-diagram.png" style="width: 100%;" alt="Slide 1">
     <img src="/portfolio/assets/images/img0.png" style="width: 100%;" alt="Slide 2">
     <img src="/portfolio/assets/images/img1.png" style="width: 100%;" alt="Slide 3">
   </div>
 
-  <button aria-label="Previous" class="glider-prev">«</button>
-  <button aria-label="Next" class="glider-next">»</button>
-  <div role="tablist" class="dots"></div>
+  <div role="tablist" class="dots" style="text-align: center; margin-top: 1rem;"></div>
 </div>
+
 
 <script>
   window.addEventListener('load', function(){
