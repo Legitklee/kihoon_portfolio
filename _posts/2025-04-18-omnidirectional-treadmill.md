@@ -12,6 +12,14 @@ image: /assets/images/treadmill-diagram.png
 
 ---
 
+<div style="display: flex; overflow-x: auto; gap: 1rem; padding: 1rem 0;">
+  <img src="/portfolio/assets/images/treadmill-diagram.png" style="height: 250px;" alt="Image 1">
+  <img src="/portfolio/assets/images/img0.png" style="height: 250px;" alt="Image 2">
+  <img src="/portfolio/assets/images/img1.png" style="height: 250px;" alt="Image 3">
+</div>
+
+---
+
 ### 🧩 Problem Statement
 
 Traditional treadmills allow only linear forward motion, limiting their effectiveness in replicating natural, complex human movement. Our goal was to design an omnidirectional treadmill that enables free movement in any direction **without using motors**, making it **cost-effective**, intuitive, and suitable for **rehabilitation, VR, and military training**.
@@ -55,8 +63,4 @@ This hybrid approach allowed us to maintain user control while minimizing comple
 
 ---
 
-### 📎 Diagram
 
-![Treadmill Overview](/portfolio/assets/images/treadmill-diagram.png)
-
----
