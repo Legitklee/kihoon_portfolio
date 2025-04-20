@@ -42,9 +42,9 @@ image: /assets/images/treadmill-diagram.png
   ">❯</button>
 
   <div class="glider">
-    <img src="/portfolio/assets/images/treadmill-diagram.png" style="width: 100%;" alt="Slide 1">
-    <img src="/portfolio/assets/images/img0.png" style="width: 100%;" alt="Slide 2">
-    <img src="/portfolio/assets/images/img1.png" style="width: 100%;" alt="Slide 3">
+    <img src="/portfolio/assets/images/omni/img2.png" style="width: 100%;" alt="Slide 1">
+    <img src="/portfolio/assets/images/omni/img0.png" style="width: 100%;" alt="Slide 2">
+    <img src="/portfolio/assets/images/omni/img1.png" style="width: 100%;" alt="Slide 3">
   </div>
 
   <div role="tablist" class="dots" style="text-align: center; margin-top: 1rem;"></div>
