@@ -7,54 +7,8 @@ categories: [projects]
 
 **Timeline:** Fall 2024  
 **Personal ML Project**  
-**Status:** Completed
 
 ---
-
-### 🧩 Problem Statement
-
-This project aimed to estimate the **market value of professional soccer players** using machine learning. Inspired by real-world transfer market dynamics, the model was built to analyze patterns in player stats and characteristics, and output a predicted market value — a valuable asset for clubs, analysts, or scouting platforms.
-
----
-
-### 🛠 Tools & Technologies
-
-- **Language:** Python  
-- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib  
-- **Algorithms:** Linear Regression, Ridge Regression, Decision Tree, Random Forest  
-- **Preprocessing:** One-hot encoding for categorical features, normalization for numerical data  
-- **Evaluation Metrics:** R² Score, RMSE
-
----
-
-### 📊 Dataset
-
-- **Source:** Public Kaggle dataset on FIFA/Transfermarkt player stats  
-- ~10,000 player samples  
-- Features included: age, nationality, position, rating, goals, assists, minutes played, and more  
-- Output: Player market value in USD (continuous target)
-
----
-
-### 🚧 Challenges & Insights
-
-- **Data imbalance** — many players had low market values, few had extreme highs  
-- **Feature selection** — model performance improved by dropping noisy or overly correlated fields  
-- **Model tuning** — Ridge regression + decision trees gave the best trade-off between bias and variance  
-- **Interpretability** — found player position, age, and minutes played were the most influential features
-
----
-
-### ✅ Results & Impact
-
-- Achieved **R² score of 0.81** on test set  
-- Model effectively captured value trends across player demographics and performance  
-- Can be extended into web dashboards or integrated into scouting systems  
-- Reinforced understanding of end-to-end ML pipelines: from raw data to predictions and evaluation
-
----
-
-### 🖼️ Prediction Model Visuals
 
 <!-- Carousel Starts Here -->
 <div class="glider-contain" style="position: relative; width: 100%; overflow: hidden; margin: 2rem 0;">
@@ -110,3 +64,48 @@ This project aimed to estimate the **market value of professional soccer players
     });
   });
 </script>
+
+---
+
+### 🧩 Problem Statement
+
+This project aimed to estimate the **market value of professional soccer players** using machine learning. Inspired by real-world transfer market dynamics, the model was built to analyze patterns in player stats and characteristics, and output a predicted market value — a valuable asset for clubs, analysts, or scouting platforms.
+
+---
+
+### 🛠 Tools & Technologies
+
+- **Language:** Python  
+- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib  
+- **Algorithms:** Linear Regression, Ridge Regression, Decision Tree, Random Forest  
+- **Preprocessing:** One-hot encoding for categorical features, normalization for numerical data  
+- **Evaluation Metrics:** R² Score, RMSE
+
+---
+
+### 📊 Dataset
+
+- **Source:** Public Kaggle dataset on FIFA/Transfermarkt player stats  
+- ~10,000 player samples  
+- Features included: age, nationality, position, rating, goals, assists, minutes played, and more  
+- Output: Player market value in USD (continuous target)
+
+---
+
+### 🚧 Challenges & Insights
+
+- **Data imbalance** — many players had low market values, few had extreme highs  
+- **Feature selection** — model performance improved by dropping noisy or overly correlated fields  
+- **Model tuning** — Ridge regression + decision trees gave the best trade-off between bias and variance  
+- **Interpretability** — found player position, age, and minutes played were the most influential features
+
+---
+
+### ✅ Results & Impact
+
+- Achieved **R² score of 0.81** on test set  
+- Model effectively captured value trends across player demographics and performance  
+- Can be extended into web dashboards or integrated into scouting systems  
+- Reinforced understanding of end-to-end ML pipelines: from raw data to predictions and evaluation
+
+---

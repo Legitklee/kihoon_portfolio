@@ -6,14 +6,7 @@ categories: [projects]
 ---
 
 **Timeline:** Fall 2024  
-**Project Type:** Personal ML Project  
-**Status:** Completed
-
----
-
-### 🧩 Problem Statement
-
-This project aimed to develop a machine learning model capable of classifying whether a person is likely to have diabetes based on medical attributes. It was built to explore the practical application of supervised classification models in healthcare using structured health datasets.
+**Project Type:** ML Project  
 
 ---
 
@@ -70,6 +63,12 @@ This project aimed to develop a machine learning model capable of classifying wh
     });
   });
 </script>
+
+---
+
+### 🧩 Problem Statement
+
+This project aimed to develop a machine learning model capable of classifying whether a person is likely to have diabetes based on medical attributes. It was built to explore the practical application of supervised classification models in healthcare using structured health datasets.
 
 ---
 

@@ -11,45 +11,6 @@ categories: [projects]
 
 ---
 
-### 🧩 Problem Statement
-
-The goal of this project is to create an interactive tabletop game that combines real-time sensing, control systems, and embedded electronics. The game simulates a mini soccer goal where a ball is rolled toward the goal, and a **servo-controlled goalie** dynamically moves to block it based on the detected ball position using **ultrasonic sensors**.
-
-This project allows exploration of microprocessor integration, sensor fusion, and responsive actuation — all in a fun, real-world application.
-
----
-
-### 🛠 Tools & Technologies
-
-- **Microcontroller:** ESP32  
-- **Sensors:** Two ultrasonic distance sensors (e.g. HC-SR04)  
-- **Actuator:** Servo motor (e.g. SG90 or MG996R)  
-- **Programming Language:** C++ via Arduino IDE or ESP-IDF  
-- **Optional:** LabVIEW GUI for ball tracking and goal status  
-- **Hardware:** Custom 3D-printed or laser-cut components
-
----
-
-### 🚧 Planned Challenges & Goals
-
-- Calibrating ultrasonic sensors for real-time ball tracking  
-- Ensuring servo motor responds fast and accurately  
-- Avoiding false readings and noise interference  
-- Making the game fun, responsive, and replayable
-
----
-
-### 🎯 Desired Outcome
-
-- Ball tracking system using dual ultrasonic sensors  
-- Goalie arm that intercepts ball based on predicted position  
-- Visual/physical goal detection  
-- (Optional) User interface for scoring and reset
-
----
-
-### 🖼️ Prototype Carousel
-
 <!-- Carousel Starts Here -->
 <div class="glider-contain" style="position: relative; width: 100%; overflow: hidden; margin: 2rem 0;">
   <button aria-label="Previous" class="glider-prev" style="
@@ -104,3 +65,44 @@ This project allows exploration of microprocessor integration, sensor fusion, an
     });
   });
 </script>
+
+---
+
+### 🧩 Problem Statement
+
+The goal of this project is to create an interactive tabletop game that combines real-time sensing, control systems, and embedded electronics. The game simulates a mini soccer goal where a ball is rolled toward the goal, and a **servo-controlled goalie** dynamically moves to block it based on the detected ball position using **ultrasonic sensors**.
+
+This project allows exploration of microprocessor integration, sensor fusion, and responsive actuation — all in a fun, real-world application.
+
+---
+
+### 🛠 Tools & Technologies
+
+- **Microcontroller:** ESP32  
+- **Sensors:** Two ultrasonic distance sensors (e.g. HC-SR04)  
+- **Actuator:** Servo motor (e.g. SG90 or MG996R)  
+- **Programming Language:** C++ via Arduino IDE or ESP-IDF  
+- **Optional:** LabVIEW GUI for ball tracking and goal status  
+- **Hardware:** Custom 3D-printed or laser-cut components
+
+---
+
+### 🚧 Planned Challenges & Goals
+
+- Calibrating ultrasonic sensors for real-time ball tracking  
+- Ensuring servo motor responds fast and accurately  
+- Avoiding false readings and noise interference  
+- Making the game fun, responsive, and replayable
+
+---
+
+### 🎯 Desired Outcome
+
+- Ball tracking system using dual ultrasonic sensors  
+- Goalie arm that intercepts ball based on predicted position  
+- Visual/physical goal detection  
+- (Optional) User interface for scoring and reset
+
+---
+
+

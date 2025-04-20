@@ -7,8 +7,7 @@ categories: [projects]
 
 **Timeline:** Jan 2023 – May 2023  
 **Partner:** Limosaero  
-**Project Type:** Undergraduate Engineering Simulation  
-**Status:** Completed
+**Project Type:** Undergraduate Engineering Research  
 
 ---
 
