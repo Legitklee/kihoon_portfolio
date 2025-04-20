@@ -6,7 +6,6 @@ categories: [projects]
 image: /assets/images/treadmill-diagram.png
 ---
 
-## 🏃‍♂️ Omnidirectional Treadmill for Rehabilitation and Gamified Fitness  
 **Timeline:** Sep 2024 – Present  
 **Project Type:** UC Berkeley M.Eng Capstone  
 **Partner:** Blue Goji (Gamified Fitness Company)
@@ -58,6 +57,6 @@ This hybrid approach allowed us to maintain user control while minimizing comple
 
 ### 📎 Diagram
 
-![Treadmill Overview]({{ site.baseurl }}/assets/images/treadmill-diagram.png)
+![Treadmill Overview](/portfolio/assets/images/treadmill-diagram.png)
 
 ---
