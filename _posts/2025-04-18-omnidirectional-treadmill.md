@@ -12,11 +12,31 @@ image: /assets/images/treadmill-diagram.png
 
 ---
 
-<div style="display: flex; overflow-x: auto; gap: 1rem; padding: 1rem 0;">
-  <img src="/portfolio/assets/images/treadmill-diagram.png" style="height: 250px;" alt="Image 1">
-  <img src="/portfolio/assets/images/img0.png" style="height: 250px;" alt="Image 2">
-  <img src="/portfolio/assets/images/img1.png" style="height: 250px;" alt="Image 3">
+<div class="glider-contain" style="width: 100%; overflow: hidden; margin-top: 2rem;">
+  <div class="glider">
+    <img src="/portfolio/assets/images/treadmill-diagram.png" style="width: 100%;" alt="Slide 1">
+    <img src="/portfolio/assets/images/img0.png" style="width: 100%;" alt="Slide 2">
+    <img src="/portfolio/assets/images/img1.png" style="width: 100%;" alt="Slide 3">
+  </div>
+
+  <button aria-label="Previous" class="glider-prev">«</button>
+  <button aria-label="Next" class="glider-next">»</button>
+  <div role="tablist" class="dots"></div>
 </div>
+
+<script>
+  window.addEventListener('load', function(){
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 1,
+      dots: '.dots',
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      }
+    });
+  });
+</script>
+
 
 ---
 
@@ -64,3 +84,8 @@ This hybrid approach allowed us to maintain user control while minimizing comple
 ---
 
 
+<!-- Glider.js CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
+<!-- Glider.js script -->
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
