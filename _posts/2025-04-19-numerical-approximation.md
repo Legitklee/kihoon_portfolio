@@ -42,8 +42,8 @@ categories: [projects]
   ">❯</button>
 
   <div class="glider">
-    <img src="/portfolio/assets/images/num/img0.png" style="width: 100%;" alt="Slide 1">
-    <img src="/portfolio/assets/images/num/img1.png" style="width: 100%;" alt="Slide 2">
+    <img src="/portfolio/assets/images/num/img0.gif" style="width: 100%;" alt="Slide 1">
+    <img src="/portfolio/assets/images/num/img1.gif" style="width: 100%;" alt="Slide 2">
     <img src="https://via.placeholder.com/1000x500?text=2D+Heat+Map+Placeholder" style="width: 100%;" alt="Slide 3">
   </div>
 
