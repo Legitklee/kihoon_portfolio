@@ -1,0 +1,25 @@
+<footer class="site-footer">
+    <div class="wrapper">
+  
+      <p class="footer-heading">{{ site.title | escape }}</p>
+  
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <ul class="social-media-list">
+            {% if site.github_username %}
+              <li><a href="https://github.com/{{ site.github_username }}">GitHub</a></li>
+            {% endif %}
+            {% if site.linkedin_url %}
+              <li><a href="{{ site.linkedin_url }}">LinkedIn</a></li>
+            {% endif %}
+          </ul>
+        </div>
+  
+        <div class="footer-col footer-col-2">
+          <p>{{ site.description | escape }}</p>
+        </div>
+      </div>
+  
+    </div>
+  </footer>
+  
