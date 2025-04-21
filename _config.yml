@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: KI-HOON LEE
+title: Ki-Hoon
 email: kihoon_lee@berkeley.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Portfolio of Ki-Hoon Lee — Mechanical Engineer passionate about energy
   technology and product design, driven by real-world impact and global experience.
 baseurl: "portfolio" # the subpath of your site, e.g. /blog
 url: "https://ki-hoon-lee.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-linkedin_username: ki-hoon-lee
+linkedin_url: https://linkedin.com/in/ki-hoon-lee
 github_username:  ki-hoon-lee
 
 # Build settings
