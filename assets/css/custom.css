@@ -106,73 +106,30 @@ body {
   }
   
   /* ========== FINAL CUSTOM FOOTER ========== */
-  .custom-footer {
-    border-top: 1px solid #ddd;
-    margin-top: 4rem;
-    padding: 2rem 0;
-    font-size: 0.95rem;
-    color: #444;
+  .resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
   }
   
-  .custom-footer-wrapper {
+  .resume-button:hover {
+    background-color: #555;
+  }
+  
+  .footer-col-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem;
   }
   
   .footer-col {
     flex: 1;
+    padding: 0 10px;
     min-width: 200px;
   }
   
-  .footer-col.left {
-    text-align: left;
-  }
-  
-  .footer-col.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer-col.right {
-    text-align: right;
-  }
-
-  .footer-col ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .footer-col ul li {
-    margin-bottom: 0.5rem;
-  }
-
-  .footer-col ul li a {
-    text-decoration: none;
-    color: #444;
-  }
-
-  .footer-col ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .resume-button button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    background-color: #222;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  .resume-button button:hover {
-    background-color: #444;
-  }
