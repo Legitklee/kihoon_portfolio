@@ -14,24 +14,37 @@
   </head>
 
   <body>
-    <!-- 💡 Minima header with wrapper -->
+    
     <header class="site-header">
-      <div class="wrapper">
-        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-        <nav class="site-nav">
-          <a class="page-link" href="{{ "/about/" | relative_url }}">About</a>
-          <a class="page-link" href="{{ "/projects/" | relative_url }}">Projects</a>
-          <a class="page-link" href="{{ "/skills/" | relative_url }}">Skills</a>
-          <a class="page-link" href="{{ "/experience/" | relative_url }}">Experience</a>
-          <a class="page-link" href="{{ "/education/" | relative_url }}">Education</a>
-        </nav>
-      </div>
-    </header>
+        <div class="wrapper">
+          <div class="nav-container">
+            <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      
+            <button class="nav-toggle" onclick="document.querySelector('.site-nav').classList.toggle('open')">
+              ☰
+            </button>
+      
+            <nav class="site-nav">
+              <a class="page-link" href="{{ "/projects/" | relative_url }}">Projects</a>
+              <a class="page-link" href="{{ "/skills/" | relative_url }}">Skills</a>
+              <a class="page-link" href="{{ "/experience/" | relative_url }}">Experience</a>
+              <a class="page-link" href="{{ "/education/" | relative_url }}">Education</a>
+              <a class="page-link" href="{{ "/about/" | relative_url }}">About</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      
 
-    <!-- 💡 No wrapper here so homepage can manage it (banner freedom) -->
-    <main class="page-content">
-      {{ content }}
-    </main>
+    <main class="page-content" aria-label="Content">
+        {% if page.full_width %}
+          {{ content }}
+        {% else %}
+          <div class="wrapper">
+            {{ content }}
+          </div>
+        {% endif %}
+      </main>      
 
     <!-- ✅ Pull in Minima footer using your original footer.html -->
     {%- include footer.html -%}
