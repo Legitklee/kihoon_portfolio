@@ -1,5 +1,3 @@
-/* ========== Banner Only ========== */
-
 .custom-banner-outer {
     width: 100vw;
     position: relative;
@@ -9,6 +7,7 @@
     margin-right: -50vw;
     overflow: hidden;
     max-width: none;
+    box-sizing: border-box;
   }
   
   .custom-banner-outer img {
@@ -20,4 +19,18 @@
     border: none;
   }
   
+  .site-footer .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .site-footer .wrapper > * {
+    flex: 1;
+    min-width: 200px;
+  }
   
