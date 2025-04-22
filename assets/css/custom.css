@@ -26,9 +26,10 @@ body {
     overflow: hidden;
     max-width: none;
     box-sizing: border-box;
-    margin-top: 0 !important;
+    margin-top: -2rem; /* <- FIX: pulls banner up */
     padding-top: 0 !important;
   }
+  
   
   .custom-banner-outer img {
     width: 100%;
