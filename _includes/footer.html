@@ -4,10 +4,10 @@
   <data class="u-url" value="{{ '/' | relative_url }}"></data>
 
   <div class="wrapper">
-    <div class="footer-col-wrapper">
-
+    <div class="custom-footer-grid">
+      
       <!-- Left column: Links -->
-      <div class="footer-col">
+      <div class="footer-section">
         <ul class="contact-list">
           <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
           <li><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
@@ -16,17 +16,16 @@
       </div>
 
       <!-- Middle column: Resume -->
-      <div class="footer-col">
+      <div class="footer-section center">
         <a class="resume-button" href="{{ '/assets/resume.pdf' | relative_url }}" download>
           <button>Download Resume</button>
         </a>
       </div>
 
       <!-- Right column: Description -->
-      <div class="footer-col">
+      <div class="footer-section right">
         <p>{{ site.description | escape }}</p>
       </div>
-
     </div>
   </div>
 </footer>

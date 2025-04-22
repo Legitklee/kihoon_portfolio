@@ -45,21 +45,31 @@
   }
   
 
-  .footer-col-wrapper {
+  .custom-footer-grid {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 2rem;
-    text-align: left;
     margin-top: 2rem;
+    text-align: left;
   }
   
-  .footer-col {
+  .footer-section {
     flex: 1;
     min-width: 200px;
   }
-
-
+  
+  .footer-section.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-section.right {
+    text-align: right;
+  }
+  
   .resume-button button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
