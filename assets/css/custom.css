@@ -106,42 +106,48 @@ body {
   
 
   /* Mobile Hamburger Button */
-.nav-toggle {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .nav-toggle {
     display: none;
     font-size: 1.8rem;
     background: none;
     border: none;
     cursor: pointer;
     margin-left: auto;
-    padding: 0.25rem;
+    padding: 0.25rem 0.5rem;
   }
   
-  /* Nav container */
-  .nav-links {
+  .site-nav {
     display: flex;
-    flex-direction: row;
     gap: 1rem;
   }
   
   @media (max-width: 768px) {
     .nav-toggle {
       display: block;
-    }
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      margin-top: 0.5rem;
-    }
-  
-    .nav-links.open {
-      display: flex;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1000;
     }
   
     .site-nav {
-      display: flex;
+      display: none;
       flex-direction: column;
-      align-items: flex-end;
+      width: 100%;
+      background-color: white;
+      margin-top: 1rem;
+    }
+  
+    .site-nav.open {
+      display: flex;
     }
   }
   
