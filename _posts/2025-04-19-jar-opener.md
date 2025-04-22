@@ -1,5 +1,5 @@
 ---
-title: "Jar Opening Device – User-Centered Assistive Design"
+title: "Jar Opening Device"
 date: 2025-04-18
 layout: post
 categories: [projects]

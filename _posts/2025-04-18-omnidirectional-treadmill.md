@@ -1,5 +1,5 @@
 ---
-title: "Omnidirectional Treadmill for Rehabilitation and Gamified Fitness"
+title: "Omnidirectional Treadmill"
 date: 2025-04-18
 layout: post
 categories: [projects]

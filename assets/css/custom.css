@@ -1,4 +1,9 @@
 /* ========== Banner Styling ========== */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
 .custom-banner-outer {
     width: 100vw;
     position: relative;
@@ -9,6 +14,7 @@
     overflow: hidden;
     max-width: none;
     box-sizing: border-box;
+    margin-top: 0;
   }
   
   .custom-banner-outer img {
