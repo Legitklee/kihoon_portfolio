@@ -1,6 +1,10 @@
 .custom-banner {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     width: 100vw;
-    margin-left: calc(-50vw + 50%);
     overflow: hidden;
   }
   
@@ -8,5 +12,8 @@
     width: 100%;
     height: auto;
     display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
   }
   
