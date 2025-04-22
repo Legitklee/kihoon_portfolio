@@ -61,4 +61,15 @@ body {
     border-top: 1px solid #ddd;
   }
   
+  .footer-col-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 1rem;
+  }
   
