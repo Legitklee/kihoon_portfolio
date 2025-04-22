@@ -120,16 +120,5 @@ body {
   .resume-button:hover {
     background-color: #555;
   }
-  
-  .footer-col-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .footer-col {
-    flex: 1;
-    padding: 0 10px;
-    min-width: 200px;
-  }
+
   
