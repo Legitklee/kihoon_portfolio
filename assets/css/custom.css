@@ -62,23 +62,6 @@ body {
     text-align: left;
   }
   
-  .footer-col-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .footer-col {
-    flex: 1;
-    min-width: 200px;
-    padding: 0 1rem 0 0;
-  }
-  
-  .footer-col p {
-    margin: 0 0 0.5rem 0;
-  }
-  
   .social-media-list {
     list-style: none;
     padding: 0;

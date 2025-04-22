@@ -22,14 +22,15 @@
     <footer class="site-footer">
         <div class="wrapper">
       
-          <!-- Bold heading above footer -->
+          <!-- Bold heading above the columns -->
           <p class="footer-heading">{{ site.title }}</p>
       
-          <!-- 3 columns -->
           <div class="footer-col-wrapper">
             <div class="footer-col footer-col-1">
-              <p>{{ site.title }}</p>
-              <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+              <ul class="contact-list">
+                <li>{{ site.title }}</li>
+                <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+              </ul>
             </div>
       
             <div class="footer-col footer-col-2">
@@ -43,8 +44,6 @@
       
         </div>
       </footer>
-      
-      
 
   </body>
 </html>
