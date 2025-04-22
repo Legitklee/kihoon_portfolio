@@ -44,3 +44,29 @@ body {
     margin-top: 1.5rem;
   }
   
+
+
+  
+  .about-home-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    flex: 2;
+  }
+  
+  .about-photo {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .about-photo img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 12px;
+  }
+  
