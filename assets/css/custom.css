@@ -84,3 +84,50 @@
     background-color: #444;
   }
   
+  .custom-footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    border-top: 1px solid #ddd;
+    margin-top: 3rem;
+    text-align: left;
+  }
+  
+  .custom-footer-col {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .custom-footer-col.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .custom-footer-col.right {
+    text-align: right;
+  }
+  
+  .custom-footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .resume-button button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .resume-button button:hover {
+    background-color: #444;
+  }
+  

@@ -1,31 +1,28 @@
-<link id="fa-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
-
-<footer class="site-footer h-card">
-  <data class="u-url" value="{{ '/' | relative_url }}"></data>
-
-  <div class="wrapper">
-    <div class="custom-footer-grid">
+<footer class="custom-footer h-card">
+    <data class="u-url" value="{{ '/' | relative_url }}"></data>
+    <div class="custom-footer-wrapper">
       
       <!-- Left column: Links -->
-      <div class="footer-section">
-        <ul class="contact-list">
+      <div class="custom-footer-col">
+        <ul class="custom-footer-list">
           <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
           <li><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
           <li><a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
         </ul>
       </div>
-
+  
       <!-- Middle column: Resume -->
-      <div class="footer-section center">
+      <div class="custom-footer-col center">
         <a class="resume-button" href="{{ '/assets/resume.pdf' | relative_url }}" download>
           <button>Download Resume</button>
         </a>
       </div>
-
+  
       <!-- Right column: Description -->
-      <div class="footer-section right">
+      <div class="custom-footer-col right">
         <p>{{ site.description | escape }}</p>
       </div>
+      
     </div>
-  </div>
-</footer>
+  </footer>
+  
