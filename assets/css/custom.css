@@ -4,9 +4,11 @@ body {
     padding: 0;
   }
   
-  /* ========== HEADER / BANNER SPACING FIXES ========== */
+  /* ========== HEADER / BANNER FIXES ========== */
   .site-header {
     margin-bottom: 0;
+    position: relative;
+    z-index: 100;
   }
   
   main.page-content {
@@ -35,6 +37,12 @@ body {
     margin: 0 !important;
     padding: 0;
     border: none;
+  }
+  
+  /* 🛠 Additional fix for excessive top space */
+  .custom-banner-outer {
+    position: relative;
+    top: -1rem; /* Try adjusting this to -2rem or -3rem if needed */
   }
   
   /* ========== ABOUT SECTION FLEX LAYOUT ========== */
@@ -66,6 +74,24 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
+  /* Responsive fix for about section */
+  @media (max-width: 768px) {
+    .about-flex {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-text,
+    .about-photo {
+      text-align: center;
+    }
+  
+    .about-photo {
+      margin-top: 1rem;
+    }
+  }
+  
   /* ========== FOOTER FLEX LAYOUT ========== */
   .footer-col-wrapper {
     display: flex;
@@ -84,8 +110,7 @@ body {
     margin-top: 1.5rem;
   }
   
-
-
+  /* ========== PROJECT LIST STYLE ========== */
   .project-list {
     list-style: none;
     padding: 0;
@@ -104,8 +129,7 @@ body {
     text-decoration: underline;
   }
   
-
-  /* Mobile Hamburger Button */
+  /* ========== NAVIGATION & HAMBURGER ========== */
   .nav-container {
     display: flex;
     justify-content: space-between;
@@ -120,8 +144,8 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    margin-left: auto;
     padding: 0.25rem 0.5rem;
+    margin-left: auto;
   }
   
   .site-nav {
@@ -129,21 +153,28 @@ body {
     gap: 1rem;
   }
   
+  /* Responsive styles for mobile nav */
   @media (max-width: 768px) {
     .nav-toggle {
       display: block;
       position: absolute;
       top: 1rem;
       right: 1rem;
-      z-index: 1000;
+      z-index: 1001;
     }
   
     .site-nav {
       display: none;
       flex-direction: column;
+      align-items: flex-start;
       width: 100%;
+      padding: 1rem;
       background-color: white;
-      margin-top: 1rem;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      z-index: 1000;
+      border-top: 1px solid #ddd;
     }
   
     .site-nav.open {
