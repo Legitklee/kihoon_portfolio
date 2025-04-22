@@ -45,7 +45,21 @@
   }
   
 
+  .footer-col-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: left;
+    margin-top: 2rem;
+  }
   
+  .footer-col {
+    flex: 1;
+    min-width: 200px;
+  }
+
+
   .resume-button button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
