@@ -44,3 +44,19 @@
     }
   }
   
+
+  
+  .resume-button button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .resume-button button:hover {
+    background-color: #444;
+  }
+  
