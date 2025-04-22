@@ -20,27 +20,26 @@
     {{ content }}
 
     <footer class="site-footer">
-        {% include social.html %}
-      
-        <div class="footer-col-wrapper">
-          <div class="footer-col footer-col-1">
-            <p class="p-name">{{ site.author.name }}</p>
-          </div>
-      
-          <div class="footer-col footer-col-2">
-            <ul class="contact-list">
-              <li>{{ site.author.name }}</li>
-              <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-              <li><a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a></li>
-            </ul>
-          </div>
-      
-          <div class="footer-col footer-col-3">
-            <p>{{ site.description }}</p>
-          </div>
+      {% include social.html %}
+
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <p class="p-name">{{ site.author.name }}</p>
         </div>
-      </footer>
-        
+
+        <div class="footer-col footer-col-2">
+          <ul class="contact-list">
+            <li>{{ site.author.name }}</li>
+            <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+            <li><a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-col-3">
+          <p>{{ site.description }}</p>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
