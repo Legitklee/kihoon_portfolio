@@ -1,5 +1,5 @@
 ---
-title: "LALE Solar UAV Simulation and Flight Optimization"
+title: "LALE Solar UAV Simulation"
 date: 2025-04-18
 layout: post
 categories: [projects]
