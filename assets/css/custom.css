@@ -143,6 +143,25 @@ body {
   .footer-col.right {
     text-align: right;
   }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-col ul li a {
+    text-decoration: none;
+    color: #444;
+  }
+
+  .footer-col ul li a:hover {
+    text-decoration: underline;
+  }
   
   .resume-button button {
     padding: 0.5rem 1rem;
@@ -157,4 +176,3 @@ body {
   .resume-button button:hover {
     background-color: #444;
   }
-  

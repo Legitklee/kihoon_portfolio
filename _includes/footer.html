@@ -1,25 +1,39 @@
-<footer class="custom-footer">
-    <div class="custom-footer-wrapper">
-  
-      <!-- Left column: links -->
+<link id="fa-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+
+<footer class="site-footer h-card">
+  <data class="u-url" value="{{ '/' | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <!-- Left Column -->
       <div class="footer-col left">
-        <p>{{ site.author.email }}</p>
-        <p><a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a></p>
-        <p><a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a></p>
+        <ul class="contact-list">
+          {% if site.author.email -%}
+            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+          {%- endif %}
+          <li><a href="https://linkedin.com/in/ki-hoon-lee" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/your-ki-hoon-lee" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        </ul>
       </div>
-  
-      <!-- Middle column: resume button -->
+
+      <!-- Middle Column -->
       <div class="footer-col center">
-        <a class="resume-button" href="{{ '/assets/resume.pdf' | relative_url }}" download>
+        <a href="/assets/resume.pdf" class="resume-button" download>
           <button>Download Resume</button>
         </a>
       </div>
-  
-      <!-- Right column: description -->
+
+      <!-- Right Column -->
       <div class="footer-col right">
-        <p>{{ site.description }}</p>
+        <p>{{ site.description | escape }}</p>
       </div>
-  
     </div>
-  </footer>
-  
+
+    <div class="social-links">
+      {%- include social.html -%}
+    </div>
+
+  </div>
+
+</footer>
