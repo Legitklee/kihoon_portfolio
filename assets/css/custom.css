@@ -1,11 +1,14 @@
+/* Top border */
 body {
     border-top: 4px solid #2196f3;
   }
   
+  /* Header styling */
   .site-header {
     background: #f8f9fa;
   }
   
+  /* Full-width banner */
   .custom-banner {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
@@ -17,28 +20,33 @@ body {
     height: auto;
     display: block;
     border: none;
-    margin: 0;
-    padding: 0;
   }
   
+  /* About section */
   .about-home {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     gap: 2rem;
     margin: 2rem 0;
   }
   
+  .about-text {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .about-photo {
+    flex-shrink: 0;
+  }
+  
   .about-photo img {
-    max-width: 200px;
+    max-width: 250px;
     border-radius: 12px;
   }
   
-  .about-text {
-    max-width: 600px;
-  }
-  
-  
+  /* Footer layout */
   .footer-col-wrapper {
     display: flex;
     justify-content: space-between;
@@ -51,5 +59,29 @@ body {
     flex: 1;
     min-width: 200px;
     padding: 0 1rem;
+  }
+  
+  .social-media-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+  
+  .social-media-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .social-media-list a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .social-media-list .svg-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    fill: currentColor;
   }
   
