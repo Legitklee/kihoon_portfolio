@@ -40,3 +40,25 @@ body {
     border: none;
   }
   
+  .full-width-banner {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow: hidden;
+  }
+  
+  .full-width-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .site-footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid #ddd;
+  }
+  
+  
