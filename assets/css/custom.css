@@ -47,18 +47,36 @@ body {
   }
   
   /* Footer layout */
+  .site-footer {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-heading {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
   .footer-col-wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 960px;
-    margin: 0 auto;
+    gap: 1rem;
   }
   
   .footer-col {
     flex: 1;
     min-width: 200px;
-    padding: 0 1rem;
+    padding: 0 1rem 0 0;
+  }
+  
+  .footer-col p {
+    margin: 0 0 0.5rem 0;
   }
   
   .social-media-list {
@@ -67,10 +85,6 @@ body {
     margin: 0;
     display: flex;
     gap: 1rem;
-  }
-  
-  .social-media-list li {
-    display: inline-block;
   }
   
   .social-media-list a {
