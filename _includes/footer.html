@@ -1,28 +1,25 @@
-<footer class="custom-footer h-card">
-    <data class="u-url" value="{{ '/' | relative_url }}"></data>
+<footer class="custom-footer">
     <div class="custom-footer-wrapper">
-      
-      <!-- Left column: Links -->
-      <div class="custom-footer-col">
-        <ul class="custom-footer-list">
-          <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          <li><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-          <li><a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-        </ul>
+  
+      <!-- Left column: links -->
+      <div class="footer-col left">
+        <p>{{ site.author.email }}</p>
+        <p><a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a></p>
+        <p><a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a></p>
       </div>
   
-      <!-- Middle column: Resume -->
-      <div class="custom-footer-col center">
+      <!-- Middle column: resume button -->
+      <div class="footer-col center">
         <a class="resume-button" href="{{ '/assets/resume.pdf' | relative_url }}" download>
           <button>Download Resume</button>
         </a>
       </div>
   
-      <!-- Right column: Description -->
-      <div class="custom-footer-col right">
-        <p>{{ site.description | escape }}</p>
+      <!-- Right column: description -->
+      <div class="footer-col right">
+        <p>{{ site.description }}</p>
       </div>
-      
+  
     </div>
   </footer>
   

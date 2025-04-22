@@ -1,120 +1,147 @@
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+/* ========== GENERAL RESET ========== */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ========== HEADER / BANNER FIXES ========== */
+  .site-header {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 100;
+  }
+  
+  main.page-content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  .custom-banner-outer {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+    max-width: none;
+    box-sizing: border-box;
+    margin-top: -2rem; /* Adjust if needed */
+    padding-top: 0 !important;
+  }
+  
+  .custom-banner-outer img {
     width: 100%;
-  }
-  
-  .nav-toggle {
-    display: none;
-    font-size: 1.8rem;
-    background: none;
+    height: auto;
+    display: block;
+    margin: 0 !important;
+    padding: 0;
     border: none;
-    cursor: pointer;
-    margin-left: auto;
-    padding: 0.25rem 0.5rem;
   }
   
-  .site-nav {
+  /* ========== ABOUT SECTION FLEX LAYOUT ========== */
+  .about-flex {
     display: flex;
-    gap: 1rem;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
   }
   
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .about-photo {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .about-photo img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive fix for about section */
   @media (max-width: 768px) {
-    .nav-toggle {
-      display: block;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      z-index: 1001;
-    }
-  
-    .site-nav {
-      display: none;
+    .about-flex {
       flex-direction: column;
-      width: 100%;
-      background-color: white;
-      margin-top: 1rem;
-      padding: 1rem;
+      align-items: center;
+      text-align: center;
     }
   
-    .site-nav.open {
-      display: flex;
+    .about-text,
+    .about-photo {
+      text-align: center;
+    }
+  
+    .about-photo {
+      margin-top: 1rem;
     }
   }
   
-
-  .custom-footer-grid {
+  /* ========== PROJECT LIST ========== */
+  .project-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .project-list li {
+    margin-bottom: 1rem;
+  }
+  
+  .project-list a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .project-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ========== FINAL CUSTOM FOOTER ========== */
+  .custom-footer {
+    border-top: 1px solid #ddd;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .custom-footer-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     gap: 2rem;
-    margin-top: 2rem;
-    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
   }
   
-  .footer-section {
+  .footer-col {
     flex: 1;
     min-width: 200px;
   }
   
-  .footer-section.center {
+  .footer-col.left {
+    text-align: left;
+  }
+  
+  .footer-col.center {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .footer-section.right {
+  .footer-col.right {
     text-align: right;
-  }
-  
-  .resume-button button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    background-color: #222;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  .resume-button button:hover {
-    background-color: #444;
-  }
-  
-  .custom-footer-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2rem;
-    border-top: 1px solid #ddd;
-    margin-top: 3rem;
-    text-align: left;
-  }
-  
-  .custom-footer-col {
-    flex: 1;
-    min-width: 200px;
-  }
-  
-  .custom-footer-col.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .custom-footer-col.right {
-    text-align: right;
-  }
-  
-  .custom-footer-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
   }
   
   .resume-button button {
