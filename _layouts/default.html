@@ -15,28 +15,27 @@
 
   <body>
 
-    <!-- ✅ Mobile Header with Hamburger -->
-    <header class="mobile-header">
-      <div class="wrapper header-flex">
-        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <header class="site-header">
+      <div class="wrapper">
+        <div class="nav-container">
+          <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
-        <!-- ☰ button -->
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-          ☰
-        </button>
+          <!-- ☰ button -->
+          <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+            ☰
+          </button>
+
+          <nav class="site-nav" id="site-nav">
+            <a class="page-link" href="{{ "/projects/" | relative_url }}">Projects</a>
+            <a class="page-link" href="{{ "/skills/" | relative_url }}">Skills</a>
+            <a class="page-link" href="{{ "/experience/" | relative_url }}">Experience</a>
+            <a class="page-link" href="{{ "/education/" | relative_url }}">Education</a>
+            <a class="page-link" href="{{ "/about/" | relative_url }}">About</a>
+          </nav>
+        </div>
       </div>
-
-      <!-- Mobile Menu -->
-      <nav class="mobile-nav" id="mobile-nav">
-        <a href="{{ "/projects/" | relative_url }}">Projects</a>
-        <a href="{{ "/skills/" | relative_url }}">Skills</a>
-        <a href="{{ "/experience/" | relative_url }}">Experience</a>
-        <a href="{{ "/education/" | relative_url }}">Education</a>
-        <a href="{{ "/about/" | relative_url }}">About</a>
-      </nav>
     </header>
 
-    <!-- ✅ Page Content -->
     <main class="page-content" aria-label="Content">
       {% if page.full_width %}
         {{ content }}
@@ -47,16 +46,14 @@
       {% endif %}
     </main>
 
-    <!-- ✅ Footer -->
     {%- include footer.html -%}
 
-    <!-- ✅ Nav Toggle Script -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const toggle = document.getElementById("nav-toggle");
-        const nav = document.getElementById("mobile-nav");
+        const nav = document.getElementById("site-nav");
 
-        toggle.addEventListener("click", function () {
+        toggle.addEventListener("click", () => {
           nav.classList.toggle("open");
         });
       });
