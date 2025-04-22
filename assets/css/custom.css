@@ -1,3 +1,4 @@
+/* ========== Banner Styling ========== */
 .custom-banner-outer {
     width: 100vw;
     position: relative;
@@ -19,18 +20,21 @@
     border: none;
   }
   
-  .site-footer .wrapper {
+  /* ========== Footer Layout Fix ========== */
+  .footer-col-wrapper {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
-    align-items: flex-start;
     text-align: left;
   }
   
-  .site-footer .wrapper > * {
+  .footer-col {
     flex: 1;
     min-width: 200px;
+  }
+  
+  .social-links {
+    margin-top: 1.5rem;
   }
   
