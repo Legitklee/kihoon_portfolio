@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
 
     {%- seo -%}
@@ -15,41 +14,31 @@
   </head>
 
   <body>
-    <header class="site-header" role="banner">
+    <!-- ✅ This header is untouched -->
+    <header class="site-header">
       <div class="wrapper">
-        <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
         <nav class="site-nav">
           <a class="page-link" href="{{ "/about/" | relative_url }}">About</a>
         </nav>
       </div>
     </header>
 
-    <!-- No wrapper here so banner can go full width -->
-    <main class="page-content" aria-label="Content">
+    <!-- ✅ DO NOT WRAP .wrapper HERE -->
+    <main class="page-content">
       {{ content }}
     </main>
 
-    <!-- ✅ Wrap ONLY the footer content -->
+    <!-- ✅ This footer WILL have a .wrapper -->
     <footer class="site-footer">
       <div class="wrapper">
         {{ site.description }}
-
-        {%- if site.github_username or site.linkedin_username or site.email -%}
-        <div class="contact-info">
+        <div class="contact-block">
           <p>{{ site.title }}</p>
-          <ul>
-            {%- if site.email -%}
-              <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-            {%- if site.linkedin_username -%}
-              <li><a href="https://linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a></li>
-            {%- endif -%}
-            {%- if site.github_username -%}
-              <li><a href="https://github.com/{{ site.github_username }}">GitHub</a></li>
-            {%- endif -%}
-          </ul>
+          <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+          <p><a href="https://linkedin.com/in/{{ site.linkedin_username }}">linkedin.com/in/{{ site.linkedin_username }}</a></p>
+          <p><a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a></p>
         </div>
-        {%- endif -%}
       </div>
     </footer>
   </body>
