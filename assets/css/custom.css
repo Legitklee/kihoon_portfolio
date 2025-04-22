@@ -1,10 +1,19 @@
-/* ========== General Cleanup ========== */
+/* ========== GENERAL RESET ========== */
 body {
     margin: 0;
     padding: 0;
   }
   
-  /* ========== Banner Styling ========== */
+  /* ========== HEADER / BANNER SPACING FIXES ========== */
+  .site-header {
+    margin-bottom: 0;
+  }
+  
+  main.page-content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
   .custom-banner-outer {
     width: 100vw;
     position: relative;
@@ -15,30 +24,34 @@ body {
     overflow: hidden;
     max-width: none;
     box-sizing: border-box;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
   
   .custom-banner-outer img {
     width: 100%;
     height: auto;
     display: block;
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
     border: none;
-    margin-top: 0;
   }
   
-  /* ========== About Section Layout ========== */
-  .about-home-row {
+  /* ========== ABOUT SECTION FLEX LAYOUT ========== */
+  .about-flex {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 2rem;
   }
   
   .about-text {
-    flex: 2;
+    flex: 1;
+    min-width: 300px;
     text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
   
   .about-photo {
@@ -50,9 +63,10 @@ body {
     max-width: 250px;
     height: auto;
     border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
-  /* ========== Footer Layout Fix ========== */
+  /* ========== FOOTER FLEX LAYOUT ========== */
   .footer-col-wrapper {
     display: flex;
     justify-content: space-between;
