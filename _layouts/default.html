@@ -20,11 +20,12 @@
           <div class="nav-container">
             <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
       
-            <button class="nav-toggle" onclick="document.querySelector('.site-nav').classList.toggle('open')">
+            <!-- Only visible on mobile -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
               ☰
             </button>
       
-            <nav class="site-nav">
+            <nav class="site-nav" id="site-nav">
               <a class="page-link" href="{{ "/projects/" | relative_url }}">Projects</a>
               <a class="page-link" href="{{ "/skills/" | relative_url }}">Skills</a>
               <a class="page-link" href="{{ "/experience/" | relative_url }}">Experience</a>
@@ -34,6 +35,7 @@
           </div>
         </div>
       </header>
+      
       
 
     <main class="page-content" aria-label="Content">
@@ -48,5 +50,18 @@
 
     <!-- ✅ Pull in Minima footer using your original footer.html -->
     {%- include footer.html -%}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const toggle = document.getElementById("nav-toggle");
+          const nav = document.getElementById("site-nav");
+      
+          toggle.addEventListener("click", () => {
+            nav.classList.toggle("open");
+          });
+        });
+      </script>
+      
+
   </body>
 </html>
