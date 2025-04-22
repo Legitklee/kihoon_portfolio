@@ -1,10 +1,11 @@
-/* ========== Banner Styling ========== */
+/* ========== General Cleanup ========== */
 body {
     margin: 0;
     padding: 0;
   }
   
-.custom-banner-outer {
+  /* ========== Banner Styling ========== */
+  .custom-banner-outer {
     width: 100vw;
     position: relative;
     left: 50%;
@@ -14,7 +15,6 @@ body {
     overflow: hidden;
     max-width: none;
     box-sizing: border-box;
-    margin-top: 0;
   }
   
   .custom-banner-outer img {
@@ -24,6 +24,32 @@ body {
     margin: 0;
     padding: 0;
     border: none;
+    margin-top: 0;
+  }
+  
+  /* ========== About Section Layout ========== */
+  .about-home-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    flex: 2;
+    text-align: left;
+  }
+  
+  .about-photo {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .about-photo img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 12px;
   }
   
   /* ========== Footer Layout Fix ========== */
@@ -42,31 +68,5 @@ body {
   
   .social-links {
     margin-top: 1.5rem;
-  }
-  
-
-
-  
-  .about-home-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-  
-  .about-text {
-    flex: 2;
-  }
-  
-  .about-photo {
-    flex: 1;
-    text-align: right;
-  }
-  
-  .about-photo img {
-    max-width: 250px;
-    height: auto;
-    border-radius: 12px;
   }
   
