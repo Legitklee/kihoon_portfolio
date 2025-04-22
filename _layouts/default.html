@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <!-- ✅ This header is untouched -->
+    <!-- 💡 Minima header with wrapper -->
     <header class="site-header">
       <div class="wrapper">
         <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
@@ -24,22 +24,12 @@
       </div>
     </header>
 
-    <!-- ✅ DO NOT WRAP .wrapper HERE -->
+    <!-- 💡 No wrapper here so homepage can manage it (banner freedom) -->
     <main class="page-content">
       {{ content }}
     </main>
 
-    <!-- ✅ This footer WILL have a .wrapper -->
-    <footer class="site-footer">
-      <div class="wrapper">
-        {{ site.description }}
-        <div class="contact-block">
-          <p>{{ site.title }}</p>
-          <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-          <p><a href="https://linkedin.com/in/{{ site.linkedin_username }}">linkedin.com/in/{{ site.linkedin_username }}</a></p>
-          <p><a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a></p>
-        </div>
-      </div>
-    </footer>
+    <!-- ✅ Pull in Minima footer using your original footer.html -->
+    {%- include footer.html -%}
   </body>
 </html>

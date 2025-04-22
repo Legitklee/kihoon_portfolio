@@ -1,5 +1,5 @@
 ---
-title: "Ultrasonic Goalie Tabletop Game with ESP32"
+title: "Ultrasonic Goalie Tabletop Game"
 date: 2025-04-18
 layout: post
 categories: [projects]

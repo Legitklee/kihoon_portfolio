@@ -1,5 +1,5 @@
 ---
-title: "Numerical Approximation of Thermal Tile Thickness in Spacecraft Re-entry"
+title: "Numerical Approximation"
 date: 2025-04-18
 layout: post
 categories: [projects]

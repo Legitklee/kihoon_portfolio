@@ -1,5 +1,5 @@
 ---
-title: "Machine Design – Carbon Fiber Eco Brick Production System"
+title: "Machine Design"
 date: 2025-04-18
 layout: post
 categories: [projects]

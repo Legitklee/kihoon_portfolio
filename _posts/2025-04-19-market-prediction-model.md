@@ -1,5 +1,5 @@
 ---
-title: "Market Prediction Model for Soccer Players"
+title: "Market Prediction Model"
 date: 2025-04-18
 layout: post
 categories: [projects]

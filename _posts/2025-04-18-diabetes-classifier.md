@@ -1,5 +1,5 @@
 ---
-title: "Diabetes Classifier Using Machine Learning Models"
+title: "Diabetes Classifier"
 date: 2025-04-18
 layout: post
 categories: [projects]
