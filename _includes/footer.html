@@ -5,37 +5,28 @@
 
   <div class="wrapper">
     <div class="footer-col-wrapper">
-      
-      <!-- Left column: contact + links -->
+
+      <!-- Left column: Links -->
       <div class="footer-col">
         <ul class="contact-list">
-          {% if site.author.name %}
-            <li class="p-name">{{ site.author.name }}</li>
-          {% endif %}
-          {% if site.author.email %}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {% endif %}
-          {% if site.github_username %}
-            <li><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-          {% endif %}
-          {% if site.linkedin_username %}
-            <li><a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-          {% endif %}
+          <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+          <li><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
         </ul>
       </div>
 
-      <!-- Middle column: resume -->
+      <!-- Middle column: Resume -->
       <div class="footer-col">
         <a class="resume-button" href="{{ '/assets/resume.pdf' | relative_url }}" download>
           <button>Download Resume</button>
         </a>
       </div>
 
-      <!-- Right column: description -->
+      <!-- Right column: Description -->
       <div class="footer-col">
         <p>{{ site.description | escape }}</p>
       </div>
-      
+
     </div>
   </div>
 </footer>
