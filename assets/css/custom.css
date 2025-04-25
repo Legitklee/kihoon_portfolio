@@ -1,10 +1,4 @@
-/* ========== GENERAL RESET ========== */
-body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* ========== HEADER / BANNER FIXES ========== */
+/* ========== HEADER / BANNER FIXES ========== */
   .site-header {
     margin-bottom: 0;
     position: relative;
@@ -106,19 +100,19 @@ body {
   }
   
   /* ========== FINAL CUSTOM FOOTER ========== */
-  .resume-button {
+  .footer-col .button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
+    background-color: #007acc;
     color: white;
+    padding: 6px 12px;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    margin-top: 8px;
   }
   
-  .resume-button:hover {
-    background-color: #555;
+  .footer-col .button:hover {
+    background-color: #005f99;
   }
+  
 
   
