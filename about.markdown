@@ -22,18 +22,6 @@ I speak:
 
 ---
 
-### 👨‍👩‍👧‍👦 Inspired by Legacy
-
-My grandfather, who rose from hardship after the Korean War to become a respected diplomat, and my mother, who spent her life working with the UNHCR across continents, instilled in me the value of **humanitarian impact over personal gain**. From them, I learned that engineering is not just about equations — it’s about solving problems that improve lives.
-
----
-
-### 🪖 My Turning Point
-
-During my 18-month military service, I volunteered for a forward post just 2 km from the North Korean border. Despite language barriers, harsh conditions, and 24/7 alertness, I grew as a leader and teammate. That experience sharpened my focus and gave me the resilience I carry into every challenge — personal or technical.
-
----
-
 ### 🛠 Why I Build
 
 Whether it’s a **resistive rehabilitation treadmill**, a **solar-powered UAV simulator**, or a **machine learning classifier** for health and sports analytics, I design systems with real-world users in mind.  
