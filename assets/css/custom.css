@@ -128,6 +128,70 @@
   .button:hover {
     background-color: #005f99;
   }
-  
 
+  /* Footer Wrapper */
+  .site-footer {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
   
+  .footer-col-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col {
+    flex: 1;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .footer-col.left {
+    text-align: left;
+  }
+  
+  .footer-col.right {
+    text-align: right;
+  }
+  
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-list a {
+    text-decoration: none;
+    color: #007acc;
+  }
+  
+  .contact-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .resume-button button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .resume-button button:hover {
+    background-color: #005f99;
+  }
+
+
+

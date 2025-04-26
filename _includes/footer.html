@@ -1,23 +1,40 @@
-<div class="footer-col-wrapper">
-    <div class="footer-col">
-    {%- if site.author %}
-      <ul class="contact-list">
-        {% if site.author.name -%}
-          <li class="p-name">{{ site.author.name | escape }}</li>
-        {% endif -%}
-        {% if site.author.email -%}
-          <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+<link id="fa-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+
+<footer class="site-footer h-card">
+  <data class="u-url" value="{{ '/' | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <!-- Left Column -->
+      <div class="footer-col left">
+        {%- if site.author %}
+          <ul class="contact-list">
+            {% if site.author.name -%}
+              <li class="p-name">{{ site.author.name | escape }}</li>
+            {% endif -%}
+            {% if site.author.email -%}
+              <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+            {%- endif %}
+          </ul>
         {%- endif %}
-        <li>
-          <a href="/assets/resume.pdf" class="button" download>
-            <i class="fas fa-file-download"></i> Download Resume
-          </a>
-        </li>
-      </ul>
-    {%- endif %}
+        <div class="social-links">
+          {%- include social.html -%}
+        </div>
+      </div>
+
+      <!-- Middle Column -->
+      <div class="footer-col center">
+        <a href="/assets/resume.pdf" class="resume-button" download>
+          <button>Download Resume</button>
+        </a>
+      </div>
+
+      <!-- Right Column -->
+      <div class="footer-col right">
+        <p>{{ site.description | escape }}</p>
+      </div>
     </div>
-    <div class="footer-col">
-      <p>{{ site.description | escape }}</p>
-    </div>
+
   </div>
-  
+</footer>
